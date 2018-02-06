@@ -1,0 +1,28 @@
+﻿@using Vidak.Models
+
+@{
+	ViewBag.Title = "Movie";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Movies</h2>
+<table class="table">
+	<caption>List of movies</caption>
+	<thead>
+		<tr>
+			<th scope="col">#</th>
+			<th scope="col">Name</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var movie in Model)
+		{
+			<tr>
+				<th scope="row">@movie.Id</th>
+				<td>@Html.ActionLink((string)@movie.Name, "Detail", "Movies", new { id = movie.Id }, null)</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
+
