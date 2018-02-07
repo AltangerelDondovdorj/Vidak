@@ -10,6 +10,7 @@ namespace Vidak.Models
 	public class ApplicationDbContext : DbContext
 	{
 		public DbSet<Customer> Customer { get; set; }
+		public DbSet<Movie> Movie { get; set; }
 		public ApplicationDbContext() : base("Vidak")
 		{
 		}

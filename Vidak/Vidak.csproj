@@ -186,9 +186,26 @@
     <Compile Include="Migrations\201802062231342_AddedRequireAnnotationOnNameOfMembershipType.Designer.cs">
       <DependentUpon>201802062231342_AddedRequireAnnotationOnNameOfMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802062247333_AddedNewGenreTypeModelAndConnectToMovie.cs" />
+    <Compile Include="Migrations\201802062247333_AddedNewGenreTypeModelAndConnectToMovie.Designer.cs">
+      <DependentUpon>201802062247333_AddedNewGenreTypeModelAndConnectToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802062251560_UpdatedGenreTypes.cs" />
+    <Compile Include="Migrations\201802062251560_UpdatedGenreTypes.Designer.cs">
+      <DependentUpon>201802062251560_UpdatedGenreTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802062252239_PopulateDataOnGenreTypes.cs" />
+    <Compile Include="Migrations\201802062252239_PopulateDataOnGenreTypes.Designer.cs">
+      <DependentUpon>201802062252239_PopulateDataOnGenreTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802070022491_AddedDateAndOtherProperty.cs" />
+    <Compile Include="Migrations\201802070022491_AddedDateAndOtherProperty.Designer.cs">
+      <DependentUpon>201802070022491_AddedDateAndOtherProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\GenreTypes.cs" />
     <Compile Include="Models\MembershipTypes.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\RandomMovieViewModel.cs" />
@@ -327,6 +344,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802062231342_AddedRequireAnnotationOnNameOfMembershipType.resx">
       <DependentUpon>201802062231342_AddedRequireAnnotationOnNameOfMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802062247333_AddedNewGenreTypeModelAndConnectToMovie.resx">
+      <DependentUpon>201802062247333_AddedNewGenreTypeModelAndConnectToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802062251560_UpdatedGenreTypes.resx">
+      <DependentUpon>201802062251560_UpdatedGenreTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802062252239_PopulateDataOnGenreTypes.resx">
+      <DependentUpon>201802062252239_PopulateDataOnGenreTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802070022491_AddedDateAndOtherProperty.resx">
+      <DependentUpon>201802070022491_AddedDateAndOtherProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

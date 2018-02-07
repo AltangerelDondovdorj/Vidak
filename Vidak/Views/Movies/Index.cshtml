@@ -1,4 +1,4 @@
-﻿@using Vidak.Models
+﻿@model IEnumerable<Vidak.Models.Movie>
 
 @{
 	ViewBag.Title = "Movie";
@@ -20,6 +20,7 @@
 			<tr>
 				<th scope="row">@movie.Id</th>
 				<td>@Html.ActionLink((string)@movie.Name, "Detail", "Movies", new { id = movie.Id }, null)</td>
+				<td>@movie.GenreTypes.Name</td>
 			</tr>
 		}
 	</tbody>
